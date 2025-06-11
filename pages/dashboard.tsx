@@ -66,12 +66,20 @@ export default function DashboardPage() {
           <>
             <div className="flex flex-row justify-between">
               <h1 className="text-2xl font-semibold">Privy Auth Demo</h1>
-              <button
-                onClick={logout}
-                className="text-sm bg-violet-200 hover:text-violet-900 py-2 px-4 rounded-md text-violet-700"
-              >
-                Logout
-              </button>
+              <div className="flex gap-4">
+                <button
+                  onClick={() => router.push("/chat")}
+                  className="text-sm bg-indigo-600 hover:bg-indigo-700 py-2 px-4 rounded-md text-white"
+                >
+                  Open BioAgent
+                </button>
+                <button
+                  onClick={logout}
+                  className="text-sm bg-violet-200 hover:text-violet-900 py-2 px-4 rounded-md text-violet-700"
+                >
+                  Logout
+                </button>
+              </div>
             </div>
             <div className="mt-12 flex gap-4 flex-wrap">
               {googleSubject ? (
