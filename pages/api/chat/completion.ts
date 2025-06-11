@@ -14,7 +14,7 @@ export default async function handler(
   }
 
   try {
-    const { messages, model = "gpt-4o", threadId } = req.body;
+    const { messages, model = "gpt-4o" } = req.body;
 
     if (!messages || !Array.isArray(messages)) {
       return res.status(400).json({ error: "Messages array is required" });
