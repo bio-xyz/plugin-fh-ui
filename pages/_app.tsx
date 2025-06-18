@@ -37,11 +37,12 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png" />
         <link rel="manifest" href="/favicons/manifest.json" />
 
-        <title>Privy Auth Starter</title>
-        <meta name="description" content="Privy Auth Starter" />
+        <title>BioAgents</title>
+        <meta name="description" content="BioAgents" />
       </Head>
       <PrivyProvider
         appId={process.env.NEXT_PUBLIC_PRIVY_APP_ID || ""}
+        clientId={process.env.NEXT_PUBLIC_PRIVY_CLIENT_ID || ""}
         config={{
           embeddedWallets: {
             createOnLogin: "all-users",
