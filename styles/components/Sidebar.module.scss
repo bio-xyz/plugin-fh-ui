@@ -1,0 +1,32 @@
+.sidebar {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  background: rgb(35, 40, 40);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  overflow-y: auto;
+}
+.heading {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #fff;
+}
+.newChatBtn {
+  padding: 12px 20px;
+  background: rgb(52, 59, 59);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  margin-bottom: 20px;
+
+  &:hover {
+    background: rgb(62, 69, 69);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+}
