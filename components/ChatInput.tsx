@@ -6,7 +6,7 @@ const ChatInput: React.FC = () => {
     <main className={styles.main}>
       <div className={styles.mainContent}>
         <h1>Welcome to BioAgent</h1>
-        <p>A better way to do Bio Medical research</p>
+        <p>A better way to do BioMedical Research</p>
       </div>
       <div className={styles.chatInputContainer}>
         <input
